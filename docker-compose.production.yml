@@ -18,7 +18,7 @@ services:
     volumes:
       - static_volume:/backend_static
   frontend:
-    image: div1neikk/taski_frontend  # Качаем с Docker
+    image: div1neikk/taski_frontend  # Качаем с Doc
     env_file: .env
     command: cp -r /app/build/. /frontend_static/
     volumes:
